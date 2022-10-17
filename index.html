@@ -14,56 +14,52 @@
         <header>
             <img src="images/logo.svg" alt="logo">
         </header>        
-        <div id="app">
-        <form class="square-background">
-           
+        <main id="app">
+            <div class="square-background">
                 <section id="left-content">
-                <form>
-                <label for="total-bill">Bill</label>
-                <br>
-                <div class="icon-inside">
-                <input type="number" id="total-bill" placeholder="0">
-                <i class="icon"><img src="images/icon-dollar.svg" alt="icon-dolar"></i>
-                </div>
-                <label for="percentage-buttons" id="select">Select Tip %</label>
-                <br>
-                <div id="percentage-buttons">
-                    <button id="tip-5" value="5">5%</button>
-                    <button id="tip-10" value="10">10%</button> 
-                    <button id="tip-15" value="15">15%</button> 
-                    <button id="tip-25" value="25">25%</button> 
-                    <button id="tip-50" value="50">50%</button>  
-                    <input type="number" id="custom-tip" placeholder="Custom"> 
-                </div>  
-                <label for="number-of-people">Number of People</label> 
-                <br>
-                <div class="icon-inside" id="icon-2">
-                <input type="number" id="number-of-people" placeholder="0" >
-                <i class="icon"><img src="images/icon-person.svg" alt="icon-person"></i>
-                </div>
-                <span id="zero-alert"> Please choose a valid number.</span>
+                    <form>
+                        <label for="total-bill">Bill</label>
+                        <div class="icon-inside">
+                            <input type="number" id="total-bill" placeholder="0">
+                            <i class="icon"><img src="images/icon-dollar.svg" alt="icon-dolar"></i>
+                        </div>
+                        <label for="percentage-buttons" id="select">Select Tip %</label>
+                        <div id="percentage-buttons">
+                            <button id="tip-5" value="5">5%</button>
+                            <button id="tip-10" value="10">10%</button> 
+                            <button id="tip-15" value="15">15%</button> 
+                            <button id="tip-25" value="25">25%</button> 
+                            <button id="tip-50" value="50">50%</button>  
+                            <input type="number" id="custom-tip" placeholder="Custom"> 
+                        </div>  
+                        <label for="number-of-people">Number of People</label> 
+                        <br>
+                        <div class="icon-inside" id="icon-2">
+                            <input type="number" id="number-of-people" placeholder="0" >
+                            <i class="icon"><img src="images/icon-person.svg" alt="icon-person"></i>
+                        </div>
+                        <span id="zero-alert"> Please choose a valid number.</span>
+                    </form>
                 </section>
                 <section id="right-content">
                     <div id="numbers">
-                        <h3 id="tip-amount-final">$0.00</h3>
-                        <h3 id="total-amount-final">$0.00</h3>
+                        <h1 id="tip-amount-final">$0.00</h1>
+                        <h1 id="total-amount-final">$0.00</h1>
                     </div>             
                     <div id="send-left">       
                         <div id="tip-amount">
-                            <h6>Tip Amount</h6>
+                            <h2>Tip Amount</h2>
                             <p>/ person</p>
                         </div>                
                         <div id="total-amount">
-                            <h6>Total</h6>
+                            <h2>Total</h2>
                             <p>/ person</p>
+                        </div>
                     </div>
-                    </div>
-                    
-                    </form>
-                <button id="reset-button">Reset</button>
+                    <button id="reset-button">Reset</button>
                 </section>
-            </form>
-        </div>
+            </div>
+        </main>
     </body>
     <script src="script.js"></script>
 </html>
