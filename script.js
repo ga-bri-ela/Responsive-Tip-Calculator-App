@@ -19,24 +19,24 @@ let isClicked = false;
 
 buttonArray.forEach((button) => {
     button.addEventListener("click", () => {
-         isClicked = true;
-         button.style.backgroundColor = 'hsl(172, 67%, 45%)';
-         button.style.color = 'hsl(183, 100%, 15%)';
-         button.classList.add('selected');
-         isClicked = true;
-         buttonArray.forEach((button => {
-            button.disabled = true;
-            tipCustom.disabled = true;
-         }));
-       if(billTotal.value && numberOfPeople.value){
-        calculator();
-       };
+        buttonArray.forEach((button) => {
+            button.classList.remove('selected');
+            button.disabled = false;
+        });
+        tipCustom.classList.remove('selected');
+        isClicked = true;
+        button.classList.add('selected');
+        button.disabled = true;
+         if(billTotal.value > 0 && numberOfPeople.value > 0){
+            calculator();
+           };
 });
 });
 
 tipCustom.addEventListener('input', () => {
     buttonArray.forEach((button => {
-        button.disabled = true;
+        button.classList.remove('selected');
+        button.disabled = false;
      }));
      isClicked = true;
      tipCustom.classList.add('selected');
@@ -44,12 +44,13 @@ tipCustom.addEventListener('input', () => {
      if(billTotal.value && numberOfPeople.value){
         calculator();
        };    
-})
+});
+
 
 billTotal.addEventListener('input', () => {
     if(numberOfPeople.value && isClicked === true){
-        calculator();
-}});  
+        calculator()
+    }});  
 
 numberOfPeople.addEventListener('input', () => {
     if(billTotal.value && isClicked === true){
@@ -69,6 +70,7 @@ const calculator = () => {
 
         tipAmountFinal.innerText = `$${tipPerPerson}`;
         totalAmountFinal.innerText = `$${totalPerPerson}`;
+
     };
 
 const reset = () => {

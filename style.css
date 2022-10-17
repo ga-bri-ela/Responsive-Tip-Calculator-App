@@ -59,14 +59,14 @@ input[type$="number"]:focus {
     box-shadow: 0 0 5px hsl(11, 86%, 38%) !important;
 }
 
-h3 {
+h1 {
     font-size: 50px;
     padding-top: 28px;
     margin: 0 auto;
 
 }
 
-h6{
+h2{
     font-size: 18px;
     margin: 0 auto;
     padding: 40px 20px 0;
@@ -142,10 +142,16 @@ button {
 button:hover{
     background-color: hsl(172, 57%, 75%);
     color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 
-button:focus,
+/*button:focus,
 button:active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}*/
+
+.selected {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
