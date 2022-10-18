@@ -46,7 +46,7 @@ In the code snippet below you can see how I use the class “selected” in the 
 >	        
 >	        button.disabled = true;
 >	        
->	         if(billTotal.value > 0 && numberOfPeople.value > 0){
+>	        if(billTotal.value > 0 && numberOfPeople.value > 0){
 >	         
 >	            calculator();
 >	            
