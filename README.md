@@ -26,20 +26,34 @@ It took me a long time to figure out how to get the value from the percentage bu
 
 In the code snippet below you can see how I use the class “selected” in the buttons event listener to first clear out any previously selected button, and then select a new button:
 
->buttonArray.forEach((button) => {
+> buttonArray.forEach((button) => {
+> 
 >	    button.addEventListener("click", () => {
+>	    
 >	        buttonArray.forEach((button) => {
+>	        
 >	            button.classList.remove('selected');
+>	            
 >	            button.disabled = false;
+>	            
 >	        });
+>	        
 >	        tipCustom.classList.remove('selected');
+>	        
 >	        isClicked = true;
+>	        
 >	        button.classList.add('selected');
+>	        
 >	        button.disabled = true;
+>	        
 >	         if(billTotal.value > 0 && numberOfPeople.value > 0){
+>	         
 >	            calculator();
+>	            
 >           };
+>           
 >});
+>
 >});
 
 Later, inside of my calculating function, I create the variable “percentage” that holds the amount corresponding to the value attribute of the element with the class “selected”, as you can see here:
