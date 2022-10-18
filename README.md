@@ -11,6 +11,9 @@ According to Frontend Mentor, to complete the [Tip Calculator App]( https://www.
 -	View the optimal layout for the app depending on their device’s screen size
 -	See hover states for all interactive elements on the page 
 -	Calculate the correct tip and total cost of the bill per person
+
+This is a screenshot of the final result:
+
 ![screenshot of the tip calculator app](https://github.com/ga-bri-ela/Responsive-Tip-Calculator-App/blob/main/splitter%20one.png?raw=true)
 
 ## Technologies 💻
