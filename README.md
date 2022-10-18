@@ -26,7 +26,7 @@ It took me a long time to figure out how to get the value from the percentage bu
 
 In the code snippet below you can see how I use the class “selected” in the buttons event listener to first clear out any previously selected button, and then select a new button:
 
-> buttonArray.forEach((button) => {
+>buttonArray.forEach((button) => {
 > 
 >	    button.addEventListener("click", () => {
 >	    
